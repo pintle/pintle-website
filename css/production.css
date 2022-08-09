@@ -47,7 +47,9 @@ pre {
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-skip: objects;
+    color: inherit;
+    text-decoration: none;
 }
 
 abbr[title] {
@@ -476,7 +478,7 @@ body {
 }
 
 ::selection {
-    background-color: #4c83ff;
+    background-color: #D61C4E;
     color: #fff;
     text-shadow: none
 }
