@@ -1687,6 +1687,12 @@ hr {
     text-align: center;
 }
 
+footer {
+    text-align: center;
+    font-size: 11px;
+    margin: 20px 0;
+}
+
 .our-why blockquote {
     font-style: italic;
     font-weight: 300;
