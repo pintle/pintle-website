@@ -608,6 +608,9 @@ fieldset[disabled] a.btn {
     max-width: 1100px;
     width: 90%
 }
+.container section {
+    margin: 60px 0;
+}
 
 header .container .logo {
     width: 200px;
@@ -1683,7 +1686,7 @@ hr {
 }
 
 .info {
-    max-width: 400px;
+    max-width: 403px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -1696,13 +1699,7 @@ hr {
 .info:hover {
     box-shadow: 0px 6px 26px -10px #C43351;
     border-color: #C4335155;
-    transform: scale(1.01, 1.01);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-@keyframes shadowMove {
-    100% {
-    }
 }
 
 footer {
@@ -1712,11 +1709,25 @@ footer {
 }
 
 .info blockquote {
-
-    font-weight: 100;
     font-size: 21px;
     color: #777;
     margin: 0 0 20px 0;
+    position: relative;
+}
+.info blockquote span {
+    position: relative;
+    z-index: 1;
+}
+.info blockquote::before {
+    font: var(--fa-font-solid);
+    content: "\f10d";
+    font-size: 102px;
+    float: left;
+    color: #f0eeee;
+    position: absolute;
+    top: -14px;
+    left: 4px;
+    z-index: 0;
 }
 
 .list-items {
@@ -1745,6 +1756,6 @@ footer {
 }
 
 .summary {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
 }
