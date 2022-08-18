@@ -498,9 +498,9 @@ img::-moz-selection {
 
 .btn {
     background-image: none;
-    border-radius: 7px;
+    border-radius: 64px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0;
     cursor: pointer;
     display: inline-block;
     font-family: 'Barlow', sans-serif;
@@ -508,7 +508,7 @@ img::-moz-selection {
     font-weight: 700;
     line-height: 1.6rem;
     margin-bottom: 0;
-    padding: .95rem 2rem .85rem;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     -ms-touch-action: manipulation;
@@ -602,12 +602,19 @@ fieldset[disabled] a.btn {
     border-color: #aaaca9
 }
 
+.btn.primary {
+    background-color: #FEB139;
+    color: #fff;
+    font-size: 18px;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     max-width: 1100px;
     width: 90%
 }
+
 .container section {
     margin: 60px 0;
 }
@@ -1714,10 +1721,12 @@ footer {
     margin: 0 0 20px 0;
     position: relative;
 }
+
 .info blockquote span {
     position: relative;
     z-index: 1;
 }
+
 .info blockquote::before {
     font: var(--fa-font-solid);
     content: "\f10d";
@@ -1728,6 +1737,11 @@ footer {
     top: -14px;
     left: 4px;
     z-index: 0;
+}
+
+.info h4 {
+    margin: 0 0 30px 0;
+    font-size: 21px;
 }
 
 .list-items {
@@ -1758,4 +1772,8 @@ footer {
 .summary {
     max-width: 400px;
     margin: 0 auto;
+}
+
+img.process {
+    max-width: 240px;
 }
