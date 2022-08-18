@@ -508,7 +508,7 @@ img::-moz-selection {
     font-weight: 700;
     line-height: 1.6rem;
     margin-bottom: 0;
-    padding: 10px;
+    padding: 10px 30px;
     text-align: center;
     text-decoration: none;
     -ms-touch-action: manipulation;
